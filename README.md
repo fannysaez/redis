@@ -66,6 +66,8 @@ Redis fonctionne en stockant toutes les données en mémoire (RAM), ce qui perme
 Toutes les commandes ci-dessus ont été testées dans un terminal Ubuntu (voir capture d'écran ci-dessous).
 
 ![Procédure complète Redis](assets/img/redis.png)
+![suite Redis](assets/img/redis-complet.png)
+
 
 ---
 
