@@ -11,6 +11,8 @@
 - **Clé-Valeur** : Modèle de stockage où chaque donnée est associée à une clé unique.
 - **Cache** : Mémoire temporaire permettant d’accélérer l’accès aux données fréquemment utilisées.
 - **Session** : Données temporaires associées à un utilisateur lors de sa connexion à une application.
+- **File d’attente (pub/sub)** : Système de communication asynchrone où des messages sont publiés sur des canaux et reçus par les abonnés, permettant la transmission d’informations entre différents services ou applications.
+- **Stockage de données temporaires (compteurs, classements, etc.)** : Utilisation de Redis pour conserver des valeurs numériques ou des listes (scores, rangs, compteurs d’événements) qui évoluent rapidement et nécessitent des accès rapides.
 - **Container Docker** : Environnement isolé permettant d’exécuter des applications avec toutes leurs dépendances.
 - **Image Docker** : Modèle ou « template » utilisé pour créer un container Docker.
 - **redis-cli** : Outil en ligne de commande pour interagir avec un serveur Redis.
