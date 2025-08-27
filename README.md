@@ -19,6 +19,10 @@ Redis (REmote DIctionary Server) est une base de données NoSQL en mémoire, ori
 
 Redis fonctionne en stockant toutes les données en mémoire (RAM), ce qui permet des lectures et écritures très rapides. Il propose différents types de structures de données (chaînes, listes, ensembles, hachages, etc.) et expose une interface simple via des commandes en ligne ou des clients pour de nombreux langages.
 
+## Pourquoi parle-t-on autant de Redis ?
+
+Redis est très populaire car il s'agit d'une base de données NoSQL en mémoire extrêmement rapide, idéale pour améliorer les performances des applications. On l'utilise principalement comme cache, gestionnaire de sessions, file d’attente (pub/sub) et pour stocker des données temporaires (compteurs, classements, etc.). Sa simplicité, sa rapidité (tout est en RAM), sa polyvalence (plusieurs structures de données) et sa compatibilité avec de nombreux langages en font un outil incontournable dans le développement moderne, notamment pour les architectures distribuées et les applications à forte charge.
+
 ---
 
 ## Lancer un container Redis avec Docker
@@ -67,7 +71,6 @@ Toutes les commandes ci-dessus ont été testées dans un terminal Ubuntu (voir 
 
 ![Procédure complète Redis](assets/img/redis.png)
 ![suite Redis](assets/img/redis-complet.png)
-
 
 ---
 
