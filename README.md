@@ -4,19 +4,6 @@
 
 # REDIS
 
-## Vocabulaire / Définitions
-
-- **Redis** : Base de données NoSQL en mémoire, orientée clé-valeur, utilisée pour le cache, la gestion de sessions, la file d’attente, etc.
-- **NoSQL** : Type de base de données non relationnelle, adaptée au stockage de grandes quantités de données non structurées ou semi-structurées.
-- **Clé-Valeur** : Modèle de stockage où chaque donnée est associée à une clé unique.
-- **Cache** : Mémoire temporaire permettant d’accélérer l’accès aux données fréquemment utilisées.
-- **Session** : Données temporaires associées à un utilisateur lors de sa connexion à une application.
-- **File d’attente (pub/sub)** : Système de communication asynchrone où des messages sont publiés sur des canaux et reçus par les abonnés, permettant la transmission d’informations entre différents services ou applications.
-- **Stockage de données temporaires (compteurs, classements, etc.)** : Utilisation de Redis pour conserver des valeurs numériques ou des listes (scores, rangs, compteurs d’événements) qui évoluent rapidement et nécessitent des accès rapides.
-- **Container Docker** : Environnement isolé permettant d’exécuter des applications avec toutes leurs dépendances.
-- **Image Docker** : Modèle ou « template » utilisé pour créer un container Docker.
-- **redis-cli** : Outil en ligne de commande pour interagir avec un serveur Redis.
-- **PING/PONG** : Commande de test de connexion à Redis ; PING attend une réponse PONG.
 
 ## Qu'est-ce que Redis ?
 
@@ -37,6 +24,21 @@ Redis fonctionne en stockant toutes les données en mémoire (RAM), ce qui perme
 
 Redis est très populaire car il s'agit d'une base de données NoSQL en mémoire extrêmement rapide, idéale pour améliorer les performances des applications. On l'utilise principalement comme cache, gestionnaire de sessions, file d’attente (pub/sub) et pour stocker des données temporaires (compteurs, classements, etc.). Sa simplicité, sa rapidité (tout est en RAM), sa polyvalence (plusieurs structures de données) et sa compatibilité avec de nombreux langages en font un outil incontournable dans le développement moderne, notamment pour les architectures distribuées et les applications à forte charge.
 
+---
+
+## Vocabulaire / Définitions
+
+- **Redis** : Base de données NoSQL en mémoire, orientée clé-valeur, utilisée pour le cache, la gestion de sessions, la file d’attente, etc.
+- **NoSQL** : Type de base de données non relationnelle, adaptée au stockage de grandes quantités de données non structurées ou semi-structurées.
+- **Clé-Valeur** : Modèle de stockage où chaque donnée est associée à une clé unique.
+- **Cache** : Mémoire temporaire permettant d’accélérer l’accès aux données fréquemment utilisées.
+- **Session** : Données temporaires associées à un utilisateur lors de sa connexion à une application.
+- **File d’attente (pub/sub)** : Système de communication asynchrone où des messages sont publiés sur des canaux et reçus par les abonnés, permettant la transmission d’informations entre différents services ou applications.
+- **Stockage de données temporaires (compteurs, classements, etc.)** : Utilisation de Redis pour conserver des valeurs numériques ou des listes (scores, rangs, compteurs d’événements) qui évoluent rapidement et nécessitent des accès rapides.
+- **Container Docker** : Environnement isolé permettant d’exécuter des applications avec toutes leurs dépendances.
+- **Image Docker** : Modèle ou « template » utilisé pour créer un container Docker.
+- **redis-cli** : Outil en ligne de commande pour interagir avec un serveur Redis.
+- **PING/PONG** : Commande de test de connexion à Redis ; PING attend une réponse PONG.
 ---
 
 ## Lancer un container Redis avec Docker
