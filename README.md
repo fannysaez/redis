@@ -51,6 +51,7 @@ Redis fonctionne en stockant toutes les données en mémoire (RAM), ce qui perme
 | -------------------------- | --------------------------------------------------------- |
 | Lancer le container Redis  | `docker run -d --name redis-container -p 6379:6379 redis` |
 | Lister les containers      | `docker ps`                                               |
+| Redémarrer le container    | `docker restart redis-container` ou `docker restart <ID>` |
 | Entrer dans le container   | `docker exec -it redis-container bash`                    |
 | Lancer le client Redis     | `redis-cli`                                               |
 | Tester la connexion        | `PING`                                                    |
