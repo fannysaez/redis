@@ -4,7 +4,6 @@
 
 # REDIS
 
-
 ## Qu'est-ce que Redis ?
 
 Redis (REmote DIctionary Server) est une base de données NoSQL en mémoire, orientée clé-valeur, open source et très performante. Elle est principalement utilisée comme base de données, cache, broker de messages ou file d'attente. Redis stocke les données en mémoire pour des accès ultra-rapides, mais peut aussi les persister sur disque.
@@ -39,6 +38,7 @@ Redis est très populaire car il s'agit d'une base de données NoSQL en mémoire
 - **Image Docker** : Modèle ou « template » utilisé pour créer un container Docker.
 - **redis-cli** : Outil en ligne de commande pour interagir avec un serveur Redis.
 - **PING/PONG** : Commande de test de connexion à Redis ; PING attend une réponse PONG.
+
 ---
 
 ## Lancer un container Redis avec Docker
@@ -54,14 +54,45 @@ Redis est très populaire car il s'agit d'une base de données NoSQL en mémoire
    docker exec -it redis-container bash
    ```
 4. **Se connecter à la base Redis depuis l'intérieur du container** :
+
    ```bash
    redis-cli
    ```
+
 5. **Tester la connexion avec la commande PING** :
    ```bash
    PING
    # Réponse attendue : PONG
    ```
+6. **Exemples de commandes Redis à tester dans le client** :
+
+| Commande            | Effet / Description                                | Exemple de résultat     |
+| ------------------- | -------------------------------------------------- | ----------------------- |
+| `SET coucou "plop"` | Ajoute une clé "coucou" avec la valeur "plop"      | `OK`                    |
+| `GET coucou`        | Récupère la valeur associée à la clé "coucou"      | `"plop"`                |
+| `KEYS *`            | Liste toutes les clés (à éviter en prod)           | `1) "coucou"`           |
+| `SCAN 0`            | Parcourt les clés (itération, production friendly) | `1) "0" 2) 1) "coucou"` |
+| `SCAN 0 MATCH cou*` | Parcourt les clés commençant par "cou"             | `1) "0" 2) 1) "coucou"` |
+| `GET cli` | Tente de lire la clé "cli" (qui n'existe pas ici) | `(nil)` |
+
+Exemple d'une session :
+
+```bash
+127.0.0.1:6379> SET coucou "plop"
+OK
+127.0.0.1:6379> GET coucou
+"plop"
+127.0.0.1:6379> KEYS *
+1) "coucou"
+127.0.0.1:6379> SCAN 0
+1) "0"
+2) 1) "coucou"
+127.0.0.1:6379> SCAN 0 MATCH cou*
+1) "0"
+2) 1) "coucou"
+127.0.0.1:6379> GET cli
+(nil)
+```
 
 ---
 
