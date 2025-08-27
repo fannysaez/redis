@@ -69,5 +69,5 @@ Toutes les commandes ci-dessus ont été testées dans un terminal Ubuntu (voir 
 ---
 
 > N'hésitez pas à consulter la documentation officielle de [Redis](https://redis.io/) et de [Docker](https://docs.docker.com/) pour plus d'informations.
-# redis
-# redis
+
+---
