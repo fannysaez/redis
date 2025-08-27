@@ -122,5 +122,6 @@ Toutes les commandes ci-dessus ont été testées dans un terminal Ubuntu (voir 
 ---
 
 > N'hésitez pas à consulter la documentation officielle de [Redis](https://redis.io/) et de [Docker](https://docs.docker.com/) pour plus d'informations.
+> Voir aussi sur la [Doc pour SCAN](https://redis.io/docs/latest/commands/scan/)
 
 ---
